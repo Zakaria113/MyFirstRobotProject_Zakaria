@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200523 10:27:59.735" generator="Robot 3.1.2 (Python 2.7.16 on darwin)">
+<suite source="/Users/macos/eclipse-workspace/FirstRobotProject" id="s1" name="FirstRobotProject">
+<suite source="/Users/macos/eclipse-workspace/FirstRobotProject/Test" id="s1-s1" name="Test">
+<suite source="/Users/macos/eclipse-workspace/FirstRobotProject/Test/TestSuite1.robot" id="s1-s1-s1" name="TestSuite1">
+<test id="s1-s1-s1-t1" name="MyFirstTest">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Hello World</arg>
+</arguments>
+<msg timestamp="20200523 10:28:00.168" level="INFO">Hello World</msg>
+<status status="PASS" endtime="20200523 10:28:00.168" starttime="20200523 10:28:00.167"></status>
+</kw>
+<status status="PASS" endtime="20200523 10:28:00.169" critical="yes" starttime="20200523 10:28:00.166"></status>
+</test>
+<test id="s1-s1-s1-t2" name="FirstSeleniumTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.google.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200523 10:28:00.175" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200523 10:28:00.209" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200523 10:28:00.210" starttime="20200523 10:28:00.207"></status>
+</kw>
+<msg timestamp="20200523 10:28:00.217" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" endtime="20200523 10:28:00.220" starttime="20200523 10:28:00.174"></status>
+</kw>
+<status status="FAIL" endtime="20200523 10:28:00.222" critical="yes" starttime="20200523 10:28:00.172">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<test id="s1-s1-s1-t3" name="SampleLoginTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://opensource-demo.orgehrmlive.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200523 10:28:00.234" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orgehrmlive.com/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200523 10:28:00.251" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20200523 10:28:00.251" starttime="20200523 10:28:00.250"></status>
+</kw>
+<msg timestamp="20200523 10:28:00.253" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" endtime="20200523 10:28:00.253" starttime="20200523 10:28:00.232"></status>
+</kw>
+<doc>This is a sample login test</doc>
+<status status="FAIL" endtime="20200523 10:28:00.254" critical="yes" starttime="20200523 10:28:00.229">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
+</test>
+<status status="FAIL" endtime="20200523 10:28:00.256" starttime="20200523 10:27:59.876"></status>
+</suite>
+<status status="FAIL" endtime="20200523 10:28:00.262" starttime="20200523 10:27:59.872"></status>
+</suite>
+<status status="FAIL" endtime="20200523 10:28:00.264" starttime="20200523 10:27:59.835"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="1">Critical Tests</stat>
+<stat fail="2" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="FirstRobotProject" pass="1">FirstRobotProject</stat>
+<stat fail="2" id="s1-s1" name="Test" pass="1">FirstRobotProject.Test</stat>
+<stat fail="2" id="s1-s1-s1" name="TestSuite1" pass="1">FirstRobotProject.Test.TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
